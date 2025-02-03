@@ -73,7 +73,7 @@ function Home() {
         alert('No spot avilable hear')
       }
       else {
-        alert('select a sport')
+        alert('Select a sport from the dropdown')
         setSpots(result.data)
       }
     } else {
