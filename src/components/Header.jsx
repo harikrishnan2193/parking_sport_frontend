@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../image/transport.avif'
+import logo from '../image/parking-icon-png-10873.png'
 
 function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
         <div className="bg-gray-800">
-            <div className="pt-1 mx-auto px-6 md:px-40 lg:px-60">
-                <nav className="flex flex-col sm:flex-row items-center justify-between py-3  space-y-4 sm:space-y-0">
+            <div className="pt-1 mx-auto px-6 md:px-32 lg:px-48">
+                <nav className="flex flex-col sm:flex-row items-center justify-between py-2  space-y-4 sm:space-y-0">
                     {/* <div className='flex'> */}
-                        <img className=" relative z-10" src={logo} width={'5%'} alt="logo image" />
+                        <img className=" relative z-10 " src={logo} width={'10%'} alt="logo image" />
                         {/* <h1 className='text-white text-xl font-roboto ps-2'>Your Parking <span className='text-blue-400'>sporter</span></h1> */}
                     {/* </div> */}
 
@@ -42,7 +42,7 @@ function Header() {
                     </div>
                     <nav className="flex flex-col items-start space-y-10 p-5 text-white">
                         <Link to='/'><a onClick={() => setIsMenuOpen(false)} className="hover:text-blue-400">ADD VEHICLE</a></Link>
-                        <Link to='/detils'><a onClick={() => setIsMenuOpen(false)} className="hover:text-blue-400">FIND VEHICLE</a></Link>
+                        <Link to='/find'><a onClick={() => setIsMenuOpen(false)} className="hover:text-blue-400">FIND VEHICLE</a></Link>
                         <Link to='/checkout'><a onClick={() => setIsMenuOpen(false)} className="hover:text-blue-400">CHECKOUT</a></Link>
                     </nav>
                 </div>
